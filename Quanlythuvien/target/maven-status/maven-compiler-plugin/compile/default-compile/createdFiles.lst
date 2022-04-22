@@ -17,7 +17,6 @@ com\btl\pojo\ViTri.class
 com\btl\services\QuanLyDoiTuong.class
 com\btl\quanlythuvien\TrangChuController.class
 com\btl\quanlythuvien\SuaDocGiaController.class
-com\btl\conf\jdbcUtils.class
 com\btl\quanlythuvien\DangNhapController.class
 com\btl\pojo\DanhMuc.class
 com\btl\quanlythuvien\ThemSachMuonController.class
