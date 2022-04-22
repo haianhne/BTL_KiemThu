@@ -16,7 +16,7 @@
    <children>
       <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="578.0" styleClass="tool">
          <children>
-            <Text fill="#f0e4ce" strokeType="OUTSIDE" strokeWidth="0.0" text="Cập nhật tên tác giả" wrappingWidth="319.98248291015625">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cập nhật tên tác giả" wrappingWidth="319.98248291015625">
                <font>
                   <Font name="Arial Bold" size="24.0" />
                </font>

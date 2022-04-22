@@ -141,7 +141,7 @@ public class ThemSachController implements Initializable {
         }
     }
      public void tgHandler(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("ThemTG.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("ThemTacGia.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
         Stage stage = new Stage();
