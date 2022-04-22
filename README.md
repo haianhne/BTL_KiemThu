@@ -3,5 +3,5 @@
 Quan ly thu vien
 - Nguyen Duy Tan
 - Nguyen Trong Nhan
-- Vu Trong Thang
+- Trương Thắng
 - Nguyen Duy Hai Anh
