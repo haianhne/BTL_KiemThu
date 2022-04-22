@@ -147,8 +147,6 @@ AnchorPane{
 }
 
 VBox.addDG{
-    -fx-border-radius: 10 10 10 10;
-    -fx-border-color: #F0AA48;
-    -fx-border-width:2;
+    -fx-border: none;
 }
 

@@ -6,7 +6,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -17,7 +17,7 @@
    <children>
       <HBox alignment="CENTER" prefHeight="58.0" prefWidth="578.0" styleClass="tool">
          <children>
-            <Text fill="#f0e4ce" strokeType="OUTSIDE" strokeWidth="0.0" text="Cập nhật sách" wrappingWidth="189.58245849609375">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cập nhật sách" wrappingWidth="189.58245849609375">
                <font>
                   <Font name="Arial Bold" size="24.0" />
                </font>
@@ -27,7 +27,7 @@
             <Insets left="10.0" />
          </padding>
          <effect>
-            <DropShadow offsetX="1.0" offsetY="3.0" />
+            <Glow />
          </effect>
       </HBox>
       <VBox alignment="CENTER" layoutX="19.0" layoutY="75.0" prefHeight="358.0" prefWidth="544.0" styleClass="addDG">
@@ -152,11 +152,11 @@
             </HBox>
          </children>
       </VBox>
-      <Button layoutX="76.0" layoutY="589.0" mnemonicParsing="false" onAction="#updateHanler" prefHeight="30.0" prefWidth="90.0" text="Cập Nhật" />
-      <Button layoutX="198.0" layoutY="589.0" mnemonicParsing="false" onAction="#resetUSachHandler" prefHeight="30.0" prefWidth="90.0" text="Nhập lại" />
+      <Button layoutX="24.0" layoutY="589.0" mnemonicParsing="false" onAction="#updateHanler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Cập Nhật" textFill="#faf2f2" />
+      <Button layoutX="125.0" layoutY="589.0" mnemonicParsing="false" onAction="#resetUSachHandler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Nhập lại" textFill="WHITE" />
       <TableView fx:id="twSach" layoutX="24.0" layoutY="441.0" prefHeight="139.0" prefWidth="540.0" />
-      <Button fx:id="btSuaTG" layoutX="319.0" layoutY="589.0" mnemonicParsing="false" onAction="#updateTGHandler" prefHeight="30.0" prefWidth="90.0" text="Tiếp tục" />
-      <Button fx:id="btSach" layoutX="438.0" layoutY="589.0" mnemonicParsing="false" onAction="#qlHandler" prefHeight="30.0" prefWidth="90.0" text="Quay lại" />
+      <Button fx:id="btSuaTG" layoutX="227.0" layoutY="589.0" mnemonicParsing="false" onAction="#updateTGHandler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Tiếp tục" textFill="WHITE" />
+      <Button fx:id="btSach" layoutX="472.0" layoutY="589.0" mnemonicParsing="false" onAction="#qlHandler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Quay lại" textFill="WHITE" />
    </children>
    <opaqueInsets>
       <Insets />

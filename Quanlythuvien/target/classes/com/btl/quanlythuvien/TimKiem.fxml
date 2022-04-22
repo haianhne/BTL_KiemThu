@@ -7,7 +7,9 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleGroup?>
-<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
@@ -17,13 +19,23 @@
    <children>
       <HBox alignment="CENTER_LEFT" prefHeight="83.0" prefWidth="678.0">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Library 3HM" wrappingWidth="177.43438720703125">
+            <ImageView fitHeight="58.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../style/image/uc-38.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="OU Library" wrappingWidth="156.22228240966797">
                <font>
-                  <Font name="Imprint MT Shadow" size="24.0" />
+                  <Font name=".VnBodoniH" size="19.0" />
                </font>
             </Text>
             <HBox alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="498.0" stylesheets="@../../../style/style.css">
                <children>
+                  <ImageView fitHeight="51.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Style/image/icon-admin.png" />
+                     </image>
+                  </ImageView>
                   <Label alignment="CENTER" text="Admin">
                      <font>
                         <Font name="Tw Cen MT" size="18.0" />
@@ -43,27 +55,34 @@
       </HBox>
       <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="75.0" prefHeight="55.0" prefWidth="663.0" styleClass="tool">
          <children>
-            <Text fill="#f0e4ce" strokeType="OUTSIDE" strokeWidth="0.0" text="Tìm Kiếm">
+            <Text fill="#f4f3f1" strokeType="OUTSIDE" strokeWidth="0.0" text="Tìm Kiếm">
                <font>
                   <Font name="Arial Bold" size="15.0" />
                </font>
             </Text>
-            <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="525.0" />
+            <HBox alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="577.0">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Style/image/1200px-Search_Icon.svg.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="txtTim" prefHeight="26.0" prefWidth="299.0" promptText="Nhập từ khóa cần tìm" />
+               </children></HBox>
          </children>
          <effect>
-            <DropShadow offsetX="1.0" offsetY="3.0" />
+            <Glow />
          </effect>
       </HBox>
-      <TableView fx:id="twSach" layoutX="14.0" layoutY="218.0" prefHeight="270.0" prefWidth="663.0" />
-      <RadioButton fx:id="rdTimTS" layoutX="20.0" layoutY="186.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="116.0" selected="true" text="Tìm theo tên sách">
+      <TableView fx:id="twSach" layoutX="14.0" layoutY="173.0" prefHeight="315.0" prefWidth="663.0" />
+      <RadioButton fx:id="rdTimTS" layoutX="14.0" layoutY="147.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="116.0" selected="true" text="Tìm theo tên sách">
          <toggleGroup>
             <ToggleGroup fx:id="A" />
          </toggleGroup></RadioButton>
-      <RadioButton fx:id="rdTimTG" layoutX="136.0" layoutY="186.0" mnemonicParsing="false" text="Tìm theo tên tác giả" toggleGroup="$A" />
-      <RadioButton fx:id="rdTimDM" layoutX="413.0" layoutY="186.0" mnemonicParsing="false" text="Tìm theo danh mục" toggleGroup="$A" />
-      <RadioButton fx:id="rdTimNamSX" layoutX="267.0" layoutY="186.0" mnemonicParsing="false" text="Tìm theo năm xuất bản" toggleGroup="$A" />
-      <TextField fx:id="txtTim" layoutX="20.0" layoutY="149.0" prefHeight="26.0" prefWidth="657.0" promptText="Nhập từ khóa cần tìm" />
-      <RadioButton fx:id="rdTimNSX" layoutX="538.0" layoutY="186.0" mnemonicParsing="false" text="Tìm theo nơi xuất bản" toggleGroup="$A" />
-      <Button fx:id="btSach" layoutX="562.0" layoutY="499.0" mnemonicParsing="false" onAction="#qlHandler" prefHeight="30.0" prefWidth="90.0" text="Quay lại" />
+      <RadioButton fx:id="rdTimTG" layoutX="139.0" layoutY="147.0" mnemonicParsing="false" text="Tìm theo tên tác giả" toggleGroup="$A" />
+      <RadioButton fx:id="rdTimDM" layoutX="412.0" layoutY="148.0" mnemonicParsing="false" text="Tìm theo danh mục" toggleGroup="$A" />
+      <RadioButton fx:id="rdTimNamSX" layoutX="267.0" layoutY="148.0" mnemonicParsing="false" text="Tìm theo năm xuất bản" toggleGroup="$A" />
+      <RadioButton fx:id="rdTimNSX" layoutX="538.0" layoutY="147.0" mnemonicParsing="false" text="Tìm theo nơi xuất bản" toggleGroup="$A" />
+      <Button fx:id="btSach" layoutX="562.0" layoutY="499.0" mnemonicParsing="false" onAction="#qlHandler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Quay lại" textFill="#faf8f8" />
    </children>
 </AnchorPane>
