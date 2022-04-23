@@ -37,7 +37,7 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author My
+ * @author Acer
  */
 public class DocGiaController implements Initializable {
     @FXML private TableView<DocGia> tbDocGia;
