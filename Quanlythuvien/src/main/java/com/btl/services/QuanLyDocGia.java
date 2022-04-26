@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.btl.services;
 
 import com.btl.conf.jdbcUtils;
@@ -14,10 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author ACER
- */
+
 public class QuanLyDocGia {
     public List<DocGia> getDocGia(String kw) throws SQLException {
          try (Connection cnn = jdbcUtils.getConn()) {

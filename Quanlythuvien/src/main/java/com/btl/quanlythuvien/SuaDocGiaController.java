@@ -39,10 +39,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-/**
- *
- * @author ACER
- */
+
 public class SuaDocGiaController implements Initializable {
     @FXML private TextField txtHo;
     @FXML private TextField txtTen;

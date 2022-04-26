@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.btl.quanlythuvien;
 
 import com.btl.pojo.DocGia;
@@ -31,10 +28,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-/**
- *
- * @author ACER
- */
+
 public class MuonSachController implements Initializable {
     @FXML private TextField txtmaDG;
     @FXML private TableView<DocGia> tbCheck;

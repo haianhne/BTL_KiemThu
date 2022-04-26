@@ -31,10 +31,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-/**
- *
- * @author ACER
- */
+
 public class ThemSachController implements Initializable {
     @FXML private TextField txtMaS;
     @FXML private TextField txtTenS;
