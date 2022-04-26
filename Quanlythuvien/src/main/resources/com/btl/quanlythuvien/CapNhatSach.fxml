@@ -156,7 +156,7 @@
       <Button layoutX="125.0" layoutY="589.0" mnemonicParsing="false" onAction="#resetUSachHandler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Nhập lại" textFill="WHITE" />
       <TableView fx:id="twSach" layoutX="24.0" layoutY="441.0" prefHeight="139.0" prefWidth="540.0" />
       <Button fx:id="btSuaTG" layoutX="227.0" layoutY="589.0" mnemonicParsing="false" onAction="#updateTGHandler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Tiếp tục" textFill="WHITE" />
-      <Button fx:id="btSach" layoutX="472.0" layoutY="589.0" mnemonicParsing="false" onAction="#qlHandler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Quay lại" textFill="WHITE" />
+      <Button fx:id="btSach" layoutX="472.0" layoutY="589.0" mnemonicParsing="false" onAction="#qlHandler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Trở lại" textFill="WHITE" />
    </children>
    <opaqueInsets>
       <Insets />

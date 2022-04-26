@@ -30,7 +30,7 @@ import org.junit.jupiter.api.Test;
 
 /**
  *
- * @author DELL
+ * @author Acer
  */
 public class SachTester {
     
@@ -66,58 +66,15 @@ public class SachTester {
        Sach s;
        try {
            s = sachService.get1Sach("1");
-           Assertions.assertEquals(s.getTenSach(),"Cấu trúc dữ liệu");
-           Assertions.assertEquals(s.getNamXuatBan(),2021);
-           Assertions.assertEquals(s.getDanhMuc(),"CNTT");
-           Assertions.assertEquals(s.getNoiXuatBan(),"Thông tin truyền thông");
+           Assertions.assertEquals("Kiểm thử phần mềm", s.getTenSach());
+           Assertions.assertEquals(2015, s.getNamXuatBan());
+           Assertions.assertEquals("Tài liệu", s.getDanhMuc());
+           Assertions.assertEquals("ĐH Mở HCM", s.getNoiXuatBan());
        } catch (SQLException ex) {
            Logger.getLogger(SachTester.class.getName()).log(Level.SEVERE, null, ex);
        }
    }
            
-//   @Test
-//   public void themSachTest() throws SQLException
-//   {
-//        Sach s = new Sach();
-//        TacGia tg = new TacGia();
-//        s.setMaSach(9);
-//        s.setTenSach("Trẻ em");
-//        s.setMoTa("hấp dẫn");
-//        s.setNamXuatBan(2020);
-//        s.setNoiXuatBan("TPHCM");
-//        s.setMaDanhMuc(4);
-//        s.setMaViTri(5);
-//        s.setSoLuong(100);
-//        tg.setIdSach(9);
-//        tg.setTenTacGia("Lê Lai");
-//        int a = sachService.getSach(null).size();
-//        int b = tacGiaService.getTG(null).size();
-//        sachService.addSach(s);
-//        tacGiaService.addTG(tg);
-//        Assertions.assertEquals(a + 1, sachService.getSach(null).size());
-//        Assertions.assertEquals(b + 1, tacGiaService.getTG(null).size());
-//   }
-
-//    @Test
-//    public void suaSachTest() throws SQLException{
-//       Sach s = sachService.get1Sach("4");
-//       s.setNamXuatBan(2018);
-//       sachService.updateSach(s);
-//       Assertions.assertEquals(2018, sachService.get1Sach("4").getNamXuatBan());
-//    }
-   
-//    @Test
-//    public void xoaSachTest() throws SQLException{
-//       sachService = new QuanLySach();
-//       tacGiaService = new QLTacGia();
-//       int a = sachService.getSach(null).size();
-//       int b = tacGiaService.getTG(null).size();
-//       tacGiaService.delTG(maSach);
-//       sachService.delSach(maSach);
-//       
-//       Assertions.assertEquals(b - 1, tacGiaService.getTG(null).size());
-//       Assertions.assertEquals(a - 1, sachService.getSach(null).size());
-//    }
    @Test
    public void tenSachTrung() throws SQLException{
        Statement stm = conn.createStatement();

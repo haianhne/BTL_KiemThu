@@ -26,16 +26,16 @@ public class QuanLyViTri {
         List<ViTri> vt = new ArrayList<>();
         try(Connection connect = jdbcUtils.getConn())
         {
-            Statement stm = connect.createStatement();
-            ResultSet rs = stm.executeQuery("SELECT * FROM vitri");
-            while(rs.next())
-            {
-                int maVT = rs.getInt("idvitri");
-                String viTri = rs.getString("TenKe");
-                
-                vt.add(new ViTri(maVT,viTri));
+            try (Statement stm = connect.createStatement()) {
+                ResultSet rs = stm.executeQuery("SELECT * FROM vitri");
+                while(rs.next())
+                {
+                    int maVT = rs.getInt("idvitri");
+                    String viTri = rs.getString("TenKe");
+                    
+                    vt.add(new ViTri(maVT,viTri));
+                }
             }
-            stm.close();
             connect.close();
         } catch (SQLException ex) {
             Logger.getLogger(QuanLyViTri.class.getName()).log(Level.SEVERE, null, ex);

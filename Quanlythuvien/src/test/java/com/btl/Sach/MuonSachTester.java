@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test;
 
 /**
  *
- * @author DELL
+ * @author Acer
  */
 public class MuonSachTester {
     QuanLyThueSach qlTS = new QuanLyThueSach();

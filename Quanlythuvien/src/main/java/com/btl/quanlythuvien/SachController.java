@@ -134,8 +134,6 @@ public class SachController implements Initializable {
         TextInputDialog diag = new TextInputDialog();
         diag.setHeaderText("nhập mã sách muốn xoá: ");
         Optional<String> ans = diag.showAndWait();
-//        if(ans.empty().isEmpty())
-//            Utils.getBox("Vui lòng nhập vào mã sách", Alert.AlertType.INFORMATION);
         if (ans.isPresent()) {
             int id = Integer.parseInt(ans.get());
             QuanLySach s = new QuanLySach();
@@ -148,13 +146,6 @@ public class SachController implements Initializable {
                 Utils.getBox("xoá không thành công!!!", Alert.AlertType.WARNING).show();
             }
         }
-//        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("XoaSach.fxml"));
-//        Parent root = fxmlLoader.load();
-//        Scene scene = new Scene(root);
-//            Stage stage = new Stage();
-//            stage.setScene(scene);
-//            stage.setTitle("Xoa sach");
-//            stage.show();
     }
     public void SearchHandler(ActionEvent event) throws IOException
     {

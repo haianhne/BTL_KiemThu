@@ -41,7 +41,7 @@ import javafx.stage.Stage;
  * @author ACER
  */
 public class CapNhatSachController implements Initializable {
-   @FXML private TableView<Sach> twSach;
+    @FXML private TableView<Sach> twSach;
     @FXML private TextField txtTenS;
     @FXML private TextField txtMoTa;
     @FXML private TextField txtNXB;
@@ -213,7 +213,7 @@ public class CapNhatSachController implements Initializable {
         }
     }
     public void updateTGHandler(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("CapNhatTG.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("CapNhatTacGia.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
         Stage stage = new Stage();

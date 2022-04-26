@@ -31,27 +31,27 @@ public class QuanLySach {
             if (kw != null && !kw.isEmpty())
                 sql += " WHERE sach.idSach = ?";
             
-            PreparedStatement stm = connect.prepareStatement(sql);
-            if (kw != null && !kw.isEmpty())
-                stm.setString(1, kw);
-            
-            ResultSet rs = stm.executeQuery();
-            while(rs.next())
-            {
-                int maSach = rs.getInt("idsach");
-                String ten = rs.getString("TenSach");
-                String tentg = rs.getString("tentg");
-                String mota = rs.getString("Mota");
-                int namXuatBan = rs.getInt("NamXuatBan");
-                String noiXuatBan = rs.getString("NoiXuatBan");
-                String tenDanhMuc = rs.getString("DanhMuc");
-                String tenKe = rs.getString("TenKe");
-                String maKhu = rs.getString("MaKhu");
-                int soLuong = rs.getInt("SoLuong");
-                Sach s = new Sach(maSach,ten, tentg ,mota , namXuatBan , noiXuatBan , tenDanhMuc ,tenKe, maKhu , soLuong );
-                kqS.add(s);
+            try (PreparedStatement stm = connect.prepareStatement(sql)) {
+                if (kw != null && !kw.isEmpty())
+                    stm.setString(1, kw);
+                
+                ResultSet rs = stm.executeQuery();
+                while(rs.next())
+                {
+                    int maSach = rs.getInt("idsach");
+                    String ten = rs.getString("TenSach");
+                    String tentg = rs.getString("tentg");
+                    String mota = rs.getString("Mota");
+                    int namXuatBan = rs.getInt("NamXuatBan");
+                    String noiXuatBan = rs.getString("NoiXuatBan");
+                    String tenDanhMuc = rs.getString("DanhMuc");
+                    String tenKe = rs.getString("TenKe");
+                    String maKhu = rs.getString("MaKhu");
+                    int soLuong = rs.getInt("SoLuong");
+                    Sach s = new Sach(maSach,ten, tentg ,mota , namXuatBan , noiXuatBan , tenDanhMuc ,tenKe, maKhu , soLuong );
+                    kqS.add(s);
+                }
             }
-            stm.close();
             connect.close();
         } catch (SQLException ex) {
             Logger.getLogger(QuanLySach.class.getName()).log(Level.SEVERE, null, ex);
