@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.btl.Sach;
 
 import com.btl.docgia.DocGiaTester;
@@ -14,10 +11,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import com.btl.services.QuanLyViTri;
 
-/**
- *
- * @author congh
- */
+
 public class ViTriTester {
     QuanLyViTri qlVT = new QuanLyViTri();
     @Test 

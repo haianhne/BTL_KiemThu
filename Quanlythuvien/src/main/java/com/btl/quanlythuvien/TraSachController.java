@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.btl.quanlythuvien;
 
 import com.btl.conf.Utils;
@@ -33,10 +30,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-/**
- *
- * @author ACER
- */
+
 public class TraSachController implements Initializable {
     @FXML private TextField maDG2;
     @FXML private Label IDSach;

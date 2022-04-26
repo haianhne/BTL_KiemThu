@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.btl.Sach;
 
 import com.btl.conf.jdbcUtils;
@@ -28,10 +25,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-/**
- *
- * @author DELL
- */
+
 public class SachTester {
     
     QuanLySach sachService = new QuanLySach();

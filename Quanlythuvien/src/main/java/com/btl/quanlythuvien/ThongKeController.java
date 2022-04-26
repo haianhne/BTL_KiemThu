@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.btl.quanlythuvien;
 
 import com.btl.conf.Utils;
@@ -29,10 +26,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-/**
- *
- * @author ACER
- */
+
 public class ThongKeController implements Initializable {
     @FXML private DatePicker dBDau;
     @FXML private DatePicker dKThuc;

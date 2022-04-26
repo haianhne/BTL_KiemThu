@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.btl.quanlythuvien;
 
 import java.io.IOException;
@@ -24,10 +21,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-/**
- *
- * @author ACER
- */
+
 public class DangNhapController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {

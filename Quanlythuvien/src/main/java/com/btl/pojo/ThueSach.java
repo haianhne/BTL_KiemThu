@@ -1,15 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.btl.pojo;
 
 import java.sql.Date;
 
-/**
- *
- * @author ACER
- */
+
 public class ThueSach {
     private int maDG;
     private int idSach;

@@ -1,9 +1,6 @@
 package com.btl.quanlythuvien;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
+
 
 import com.btl.conf.Utils;
 import java.net.URL;
@@ -34,11 +31,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 
-/**
- * FXML Controller class
- *
- * @author Acer
- */
+
 public class DocGiaController implements Initializable {
     @FXML private TableView<DocGia> tbDocGia;
     @FXML private TextField txtKeyword;
