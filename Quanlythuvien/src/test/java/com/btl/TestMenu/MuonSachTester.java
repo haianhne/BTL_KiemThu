@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.btl.Sach;
+package com.btl.TestMenu;
 
-import com.btl.docgia.DocGiaTester;
+import com.btl.TestObject.DocGiaTester;
 import com.btl.pojo.ThueSach;
 import com.btl.services.QuanLyThueSach;
 import java.sql.SQLException;
@@ -36,7 +36,7 @@ public class MuonSachTester {
     public void TestCheckInvlid() {
        int count;
        try {
-           count = qlTS.Check(3);
+           count = qlTS.Check(5);
            Assertions.assertNotEquals(1, count);
        } catch (SQLException ex) {
            Logger.getLogger(DocGiaTester.class.getName()).log(Level.SEVERE, null, ex);

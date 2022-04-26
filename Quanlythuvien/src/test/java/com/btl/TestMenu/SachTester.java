@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.btl.Sach;
+package com.btl.TestMenu;
 
 import com.btl.conf.jdbcUtils;
-import com.btl.docgia.DocGiaTester;
+import com.btl.TestObject.DocGiaTester;
 import com.btl.pojo.DocGia;
 import com.btl.pojo.Sach;
 import com.btl.pojo.TacGia;
@@ -56,20 +56,6 @@ public class SachTester {
        try {
            s = sachService.get1Sach("8");
            Assertions.assertNull(s);
-       } catch (SQLException ex) {
-           Logger.getLogger(SachTester.class.getName()).log(Level.SEVERE, null, ex);
-       }
-   }
-   
-   @Test 
-   public void TestSachIDValid() {
-       Sach s;
-       try {
-           s = sachService.get1Sach("1");
-           Assertions.assertEquals("Kiểm thử phần mềm", s.getTenSach());
-           Assertions.assertEquals(2015, s.getNamXuatBan());
-           Assertions.assertEquals("Tài liệu", s.getDanhMuc());
-           Assertions.assertEquals("ĐH Mở HCM", s.getNoiXuatBan());
        } catch (SQLException ex) {
            Logger.getLogger(SachTester.class.getName()).log(Level.SEVERE, null, ex);
        }

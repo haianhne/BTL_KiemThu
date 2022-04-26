@@ -2,29 +2,29 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.btl.Sach;
+package com.btl.TestMenu;
 
-import com.btl.docgia.DocGiaTester;
-import com.btl.pojo.DanhMuc;
-import com.btl.services.QuanLyDanhMuc;
+import com.btl.TestObject.DocGiaTester;
+import com.btl.pojo.ViTri;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import com.btl.services.QuanLyViTri;
 
 /**
  *
  * @author Acer
  */
-public class DanhMucTester {
-    QuanLyDanhMuc qlDM = new QuanLyDanhMuc();
+public class ViTriTester {
+    QuanLyViTri qlVT = new QuanLyViTri();
     @Test 
     public void TestDGbySDTInvlid() {
-       DanhMuc dm;
+       ViTri vt;
        try {
-           dm = qlDM.getDanhMuc2(10);
-           Assertions.assertNull(dm);
+           vt = qlVT.getViTri2(10);
+           Assertions.assertNull(vt);
        } catch (SQLException ex) {
            Logger.getLogger(DocGiaTester.class.getName()).log(Level.SEVERE, null, ex);
        }
@@ -32,14 +32,15 @@ public class DanhMucTester {
    
     @Test 
     public void TestDGbySDTValid() {
-       DanhMuc dm;
+       ViTri vt;
        try {
-           dm = qlDM.getDanhMuc2(1);
-           Assertions.assertEquals("Tài liệu", dm.getTenDanhMuc());
+           vt = qlVT.getViTri2(1);
+           Assertions.assertEquals("A", vt.getTenKe());
+           Assertions.assertEquals(1, vt.getMaKhu());
  
        } catch (SQLException ex) {
            Logger.getLogger(DocGiaTester.class.getName()).log(Level.SEVERE, null, ex);
        }
     }
-}
     
+}

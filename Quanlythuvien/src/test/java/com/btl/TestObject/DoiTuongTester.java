@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.btl.docgia;
+package com.btl.TestObject;
 
 import com.btl.conf.jdbcUtils;
 import java.sql.Connection;

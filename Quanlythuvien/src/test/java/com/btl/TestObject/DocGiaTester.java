@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.btl.docgia;
+package com.btl.TestObject;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -71,10 +71,10 @@ public class DocGiaTester {
        Assertions.assertEquals(a - 1, qlDG.getDocGia(null).size());
     }
     @Test 
-    public void TestDGbySDTInvlid() {
+    public void TestDGbySDTInvlid1() {
        DocGia dg;
        try {
-           dg = qlDG.get1DocGia("05644353345");
+           dg = qlDG.get1DocGia("0989898985");
            Assertions.assertNull(dg);
        } catch (SQLException ex) {
            Logger.getLogger(DocGiaTester.class.getName()).log(Level.SEVERE, null, ex);
@@ -82,13 +82,13 @@ public class DocGiaTester {
     }
    
     @Test 
-    public void TestDGbySDTValid() {
+    public void TestDGbySDTValid2() {
        DocGia dg;
        try {
-           dg = qlDG.get1DocGia("0943454345");
-           Assertions.assertEquals(dg.getTen(),"N");
-           Assertions.assertEquals(dg.getEmail(),"fsdfds@ou.edu.vn" );
-           Assertions.assertEquals("Hà Nội", dg.getDiaChi());
+           dg = qlDG.get1DocGia("098989898");
+           Assertions.assertEquals("Tân", dg.getTen());
+           Assertions.assertEquals("duytan@gmail.com", dg.getEmail() );
+           Assertions.assertEquals("Hồ Chí Minh", dg.getDiaChi());
        } catch (SQLException ex) {
            Logger.getLogger(DocGiaTester.class.getName()).log(Level.SEVERE, null, ex);
        }

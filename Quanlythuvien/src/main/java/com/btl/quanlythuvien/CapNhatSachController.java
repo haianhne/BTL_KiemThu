@@ -205,10 +205,10 @@ public class CapNhatSachController implements Initializable {
                 qlS.updateSach(s);
                 this.twSach.getItems().clear();
                 this.twSach.setItems(FXCollections.observableArrayList(qlS.getSach("")));
-                Utils.getBox("Cập nhật thành công!!!", Alert.AlertType.INFORMATION).show();
+                Utils.getBox("Cập nhật thành công!", Alert.AlertType.INFORMATION).show();
             } catch (SQLException ex) {
                 Logger.getLogger(CapNhatSachController.class.getName()).log(Level.SEVERE, null, ex);
-                Utils.getBox("Cập nhật không thành công!!!", Alert.AlertType.WARNING).show();
+                Utils.getBox("Cập nhật không thành công!", Alert.AlertType.WARNING).show();
             }
         }
     }
