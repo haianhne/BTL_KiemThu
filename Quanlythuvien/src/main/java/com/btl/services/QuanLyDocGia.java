@@ -151,7 +151,6 @@ public class QuanLyDocGia {
                 conn.setAutoCommit(false);
                 
                 PreparedStatement stm1 = conn.prepareStatement("INSERT INTO docgia(Ho,Ten,GioiTinh,NgaySinh,MaDoiTuong,MaBoPhan,HanTheBD,HanTheKT,Email,DiaChi,SDT) VALUES(?,?,?,?,?,?,?,?,?,?,?)");
-                //stm1.setInt(1, d.getMaDG());
                 stm1.setString(1, d.getHo());
                 stm1.setString(2, d.getTen());
                 stm1.setString(3, d.getGioiTinh());
@@ -199,9 +198,7 @@ public class QuanLyDocGia {
     public void updateDG(DocGia dg) throws SQLException {
             try (Connection conn = jdbcUtils.getConn()) {
                 conn.setAutoCommit(false);
-                PreparedStatement stm2 = conn.prepareStatement(
-                        "UPDATE docgia Set Ho = ?, Ten = ?, GioiTinh =?, NgaySinh =?, MaDoiTuong = ?,"
-                                + "MaBoPhan = ?,HanTheBD = ?,HanTheKT =?,Email= ?,DiaChi= ?,SDT =? WHERE maDG = ?");
+                PreparedStatement stm2 = conn.prepareStatement("UPDATE docgia Set Ho = ?, Ten = ?, GioiTinh =?, NgaySinh =?, MaDoiTuong = ?," + "MaBoPhan = ?,HanTheBD = ?,HanTheKT =?,Email= ?,DiaChi= ?,SDT =? WHERE maDG = ?");
                 stm2.setString(1, dg.getHo());
                 stm2.setString(2, dg.getTen());
                 stm2.setString(3, dg.getGioiTinh());

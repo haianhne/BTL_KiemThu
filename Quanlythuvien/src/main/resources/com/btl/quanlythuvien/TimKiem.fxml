@@ -83,6 +83,6 @@
       <RadioButton fx:id="rdTimDM" layoutX="412.0" layoutY="148.0" mnemonicParsing="false" text="Tìm theo danh mục" toggleGroup="$A" />
       <RadioButton fx:id="rdTimNamSX" layoutX="267.0" layoutY="148.0" mnemonicParsing="false" text="Tìm theo năm xuất bản" toggleGroup="$A" />
       <RadioButton fx:id="rdTimNSX" layoutX="538.0" layoutY="147.0" mnemonicParsing="false" text="Tìm theo nơi xuất bản" toggleGroup="$A" />
-      <Button fx:id="btSach" layoutX="562.0" layoutY="499.0" mnemonicParsing="false" onAction="#qlHandler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Quay lại" textFill="#faf8f8" />
+      <Button fx:id="btSach" layoutX="562.0" layoutY="499.0" mnemonicParsing="false" onAction="#qlHandler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Trở lại" textFill="#faf8f8" />
    </children>
 </AnchorPane>

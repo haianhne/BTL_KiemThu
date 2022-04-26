@@ -48,14 +48,6 @@ public class ThemSachController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-//        this.txtMaS.setText(null);
-//        this.txtTenS.setText(null);
-//        this.txtMoTa.setText(null);
-//        this.txtNXB.setText(null);
-//        this.txtNoiXB.setText(null);
-//        this.cbDanhMuc.getSelectionModel().select(null);
-//        this.txtSL.setText(null);
-//        this.cbViTri.getSelectionModel().select(null);
         QuanLyDanhMuc dm = new QuanLyDanhMuc();
         List<DanhMuc> cates;
         try {

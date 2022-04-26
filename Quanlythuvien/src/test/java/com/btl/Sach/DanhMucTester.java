@@ -10,7 +10,14 @@ import java.util.logging.Logger;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+<<<<<<< HEAD
 
+=======
+/**
+ *
+ * @author Acer
+ */
+>>>>>>> ff5cee7fc52be8a21d68598de5d86b858cf4b30f
 public class DanhMucTester {
     QuanLyDanhMuc qlDM = new QuanLyDanhMuc();
     @Test 
@@ -29,7 +36,7 @@ public class DanhMucTester {
        DanhMuc dm;
        try {
            dm = qlDM.getDanhMuc2(1);
-           Assertions.assertEquals(dm.getTenDanhMuc(),"CNTT");
+           Assertions.assertEquals("Tài liệu", dm.getTenDanhMuc());
  
        } catch (SQLException ex) {
            Logger.getLogger(DocGiaTester.class.getName()).log(Level.SEVERE, null, ex);

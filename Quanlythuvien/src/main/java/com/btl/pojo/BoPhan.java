@@ -9,9 +9,7 @@ public class BoPhan {
         this.maBP = maBP;
         this.tenBP = tenBP; 
     }
-    public BoPhan() {
-         
-    }
+    
      @Override
     public String toString() {
         return this.getTenBP();

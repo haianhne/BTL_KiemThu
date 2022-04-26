@@ -59,12 +59,12 @@ public class DocGiaController implements Initializable {
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+//         TODO
 //        QLDoiTuong s = new QLDoiTuong();
 //        List<DoiTuong> cates = s.getDoiTuong();
 //        
 //        this.cbDoiTuong.setItems(FXCollections.observableList(cates));
-//        
+        
         this.loadTableColumns();
         try {
             this.loadTableData(null);
@@ -135,7 +135,7 @@ public class DocGiaController implements Initializable {
         this.tbDocGia.setItems(FXCollections.observableList(dg));
     }
     public void addHandler(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("ThemDG.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("ThemDocGia.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
             Stage stage = new Stage();

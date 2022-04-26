@@ -21,7 +21,7 @@ import org.junit.jupiter.api.Test;
 
 /**
  *
- * @author My
+ * @author Acer
  */
 public class DoiTuongTester {
     private static Connection conn;

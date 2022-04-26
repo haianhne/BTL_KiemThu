@@ -2,7 +2,6 @@
 package com.btl.Sach;
 
 import com.btl.docgia.DocGiaTester;
-import com.btl.pojo.DanhMuc;
 import com.btl.pojo.ViTri;
 import java.sql.SQLException;
 import java.util.logging.Level;
@@ -11,7 +10,14 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import com.btl.services.QuanLyViTri;
 
+<<<<<<< HEAD
 
+=======
+/**
+ *
+ * @author Acer
+ */
+>>>>>>> ff5cee7fc52be8a21d68598de5d86b858cf4b30f
 public class ViTriTester {
     QuanLyViTri qlVT = new QuanLyViTri();
     @Test 
@@ -30,11 +36,12 @@ public class ViTriTester {
        ViTri vt;
        try {
            vt = qlVT.getViTri2(1);
-           Assertions.assertEquals(vt.getTenKe(),"A");
-           Assertions.assertEquals(vt.getMaKhu(), 1);
+           Assertions.assertEquals("A", vt.getTenKe());
+           Assertions.assertEquals(1, vt.getMaKhu());
  
        } catch (SQLException ex) {
            Logger.getLogger(DocGiaTester.class.getName()).log(Level.SEVERE, null, ex);
        }
     }
+    
 }

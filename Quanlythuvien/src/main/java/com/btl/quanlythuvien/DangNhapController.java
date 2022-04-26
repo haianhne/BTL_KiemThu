@@ -27,12 +27,9 @@ public class DangNhapController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }
-    @FXML
-    private TextField admin;
-    @FXML
-    private PasswordField password;
-    @FXML
-    private Button btnDangNhap;
+    @FXML private TextField admin;
+    @FXML private PasswordField password;
+    @FXML private Button btnDangNhap;
 
     private double xOffset, yOffset;
 
